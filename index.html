@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="top-search">
-                <img src="images/magnify.png" alt="">
+                <span class="material-icons">search</span>
                 <input type="text">
             </div>
             <div class="top-icons">
@@ -37,109 +39,149 @@
 
         <div class="sidebar">
             <div class="dashboard">
-                <h1>Dashboard</h1>
+                <h2> <span style="font-size: 36px" class="material-icons">dashboard</span>Dashboard</h2>
             </div>
-            <div class="sidebar-options">
-                <ul>
-                    <li class="options">Home</li>
-                    <li class="options">Profile</li>
-                    <li class="options">Messages</li>
-                    <li class="options">History</li>
-                    <li class="options">Tasks</li>
-                    <li class="options">Communities</li>
+            <div class="sidebar-links">
+                <ul class="nav one"> 
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-icons">home</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-icons">person</span>
+                        Profile
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="material-icons">mode_comment</span>
+                        Messages
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">history</span>
+                        History
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">task</span>
+                        Tasks
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">groups</span>
+                        Communities
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="settings-options">
-                <ul>
-                    <li class="settings">Settings</li>
-                    <li class="settings">Support</li>
-                    <li class="settings">Privacy</li>
+            <div class="sidebar-links settings">
+                <ul class="nav two">
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">settings</span>
+                        Settings
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">live_help</span>
+                        Support
+                        </a>    
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="material-icons">verified_user</span>
+                        Privacy
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="main-content">
-            <div class="projects-board">
-                <div class="project">
-                    <h3>Super Cool Project</h3>
-                    <p>Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="projects-board">
+                    <div class="project">
+                        <h3>Super Cool Project</h3>
+                        <p>Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
+                    <div class="project">
+                        <h3>Less Cool Project</h3>
+                        <p>Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum.</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
+                    <div class="project">
+                        <h3>Impossible App</h3>
+                        <p>Amet purus gravida quis blandit turpis cursus. Enim facilisis gravida neque convallis a cras semper. Dapibus ultrices in iaculis nunc sed augue.</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
+                    <div class="project">
+                        <h3>Easy Peasy App</h3>
+                        <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a. Amet facilisis magna etiam tempor orci. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
+                    <div class="project">
+                        <h3>Ad Blocker</h3>
+                        <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a.</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
+                    <div class="project">
+                        <h3>Money Maker</h3>
+                        <p>Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis parturient montes nascetur ridiculus. Euismod quis viverra nibh cras pulvinar mattis. Mattis rhoncus urna neque viverra justo nec. Morbi leo urna molestie at elementum eu. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+                        <span class="material-icons-outlined">grade</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">verified_user</span>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>Less Cool Project</h3>
-                    <p>Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum.</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="project">
-                    <h3>Impossible App</h3>
-                    <p>Amet purus gravida quis blandit turpis cursus. Enim facilisis gravida neque convallis a cras semper. Dapibus ultrices in iaculis nunc sed augue.</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="project">
-                    <h3>Easy Peasy App</h3>
-                    <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a. Amet facilisis magna etiam tempor orci. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                <div class="project">
-                    <h3>Ad Blocker</h3>
-                    <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a.</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="project">
-                    <h3>Money Maker</h3>
-                    <p>Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis parturient montes nascetur ridiculus. Euismod quis viverra nibh cras pulvinar mattis. Mattis rhoncus urna neque viverra justo nec. Morbi leo urna molestie at elementum eu. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
 
-            <div class="announcements">
-                <div class="announcement">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde...</p>
+                <div class="announcements">
+                    <div class="announcement">
+                        <h5>Site Maintenance</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde...</p>
+                    </div>
+                    <div class="announcement">
+                        <h5>Community Share Day</h5>
+                        <p>Vel rem, ipsa officia commodi veniam excepturi, ex, molestias perspiciatis consequuntur sint error voluptatem...</p>
+                    </div>
+                    <div class="announcement">
+                        <h5>Updated Privacy Policy</h5>
+                        <p>Accusamus nihil dicta, quisquam, similique doloremque unde quidem quaerat a possimus eum deleniti libero,</p>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <h5>Community Share Day</h5>
-                    <p>Vel rem, ipsa officia commodi veniam excepturi, ex, molestias perspiciatis consequuntur sint error voluptatem...</p>
-                </div>
-                <div class="announcement">
-                    <h5>Updated Privacy Policy</h5>
-                    <p>Accusamus nihil dicta, quisquam, similique doloremque unde quidem quaerat a possimus eum deleniti libero,</p>
-                </div>
-            </div>
 
-            <div class="trending">
-                <div class="trends">
-                    <img src="" alt="">
-                    <p><strong>@teagan</strong></p>
-                    <p>World Peace Builder</p>
+                <div class="trending">
+                    <div class="trends">
+                        <img src="" alt="">
+                        <p><strong>@teagan</strong></p>
+                        <p>World Peace Builder</p>
+                    </div>
+                    <div class="trends">
+                        <img src="" alt="">
+                        <p><strong>@morgan</strong></p>
+                        <p>Super Cool Project</p>
+                    </div>
+                    <div class="trends">
+                        <img src="" alt="">
+                        <p><strong>@kendall</strong></p>
+                        <p>Life Changing App</p>
+                    </div>
+                    <div class="trends">
+                        <img src="" alt="">
+                        <p><strong>@teagan</strong></p>
+                        <p>No Traffic Maker</p>
+                    </div>
                 </div>
-                <div class="trends">
-                    <img src="" alt="">
-                    <p><strong>@morgan</strong></p>
-                    <p>Super Cool Project</p>
-                </div>
-                <div class="trends">
-                    <img src="" alt="">
-                    <p><strong>@kendall</strong></p>
-                    <p>Life Changing App</p>
-                </div>
-                <div class="trends">
-                    <img src="" alt="">
-                    <p><strong>@teagan</strong></p>
-                    <p>No Traffic Maker</p>
-                </div>
-            </div>
         </div>
     </div>
 </body>
