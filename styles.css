@@ -9,6 +9,10 @@
     --font: 'Roboto', sans-serif;
     --darker-blue: #0891b2;
     --lighter-blue: #e5e5e5;
+    --background-color: white;
+    --project-background: #e5e5e5;
+    --accent-color: #f58447;
+    --para-color: #595c5d;
 }
 
 a {
@@ -17,15 +21,24 @@ a {
     color: inherit;
 }
 
+p {
+    overflow: hidden;
+    color: var(--para-color);
+}
+
 li {
     list-style-type: none;
+}
+
+h3 {
+    font-weight: 900;
 }
 
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 /* Navigation Bar */
@@ -33,17 +46,20 @@ li {
 .sidebar {
     grid-row: 1 / 3;
     background-color: var(--darker-blue);
-    color: white;
-    padding-top: 10px;
-    padding-left: 10px;
+    color: var(--background-color);
+    padding-top: 20px;
+    padding-left: 25px;
     padding-right: 70px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .nav {
     display: grid;
-    gap: 10px;
+    gap: 24px;
     padding-left: 5px;
     margin-top: 45px;
+
 }
 
 .nav.one {
@@ -75,19 +91,24 @@ li {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 /* Main-Content */
 .main-content {
     display: grid;
-    background-color: var(--lighter-blue);
+    background-color: var(--project-background);
     grid-row: 2 / 3;
     grid-column: 2 / 2;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    overflow: auto;
+}
+
+.main-content > div > h3 + div {
+    margin-top: 5px;
 }
 
 .projects-board {
@@ -97,9 +118,31 @@ li {
 .projects {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    
+}
+
+.project {
+    border-radius: 10px;
+    border-left-color: var(--darker-blue);
+    border-left: 10px solid var(--accent-color); 
+    background-color: var(--background-color);
+    box-shadow: 4px 4px 5px #a8a6a6;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 5px;
+}
+
+.actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
 }
 
 .announcement-board {
